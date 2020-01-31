@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:background="#0000A0"/>
+
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/view_record_btn"
+                android:background="#05B8CC"
+                android:textColor="#fff"
+                android:text="View Record"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/new_prescription_btn"
+                android:layout_marginLeft="1dp"
+                android:textColor="#fff"
+                android:background="#05B8CC"
+                android:text="New Prescription"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:gravity="center|top"
+            android:layout_marginBottom="30dp"
+            android:text="Match Found"
+            android:textSize="32sp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_profile_pic_default" />
+
+        <TextView
+            android:id="@+id/found_patient_id_tv"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:text=""
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/found_patient_name_tv"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:text="Patient name: "
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/found_patient_age_tv"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:gravity="left"
+
+            android:text="Age: "
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/found_patient_gender_tv"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:text="Gender: "
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/found_prescription_count_tv"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"
+            android:text="Records found : "
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

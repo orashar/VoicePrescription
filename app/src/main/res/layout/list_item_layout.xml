@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_margin="10dp"
+    android:longClickable="true"
+    android:background="@drawable/rounded_corner_design">
+
+    <TextView
+        android:id="@+id/patient_id_list_tv"
+        android:text="id"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:background="@drawable/pid_tv_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/patient_name_list_tv"
+            android:text="@string/patient_name"
+            android:gravity="left|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/patient_age_list_tv"
+                android:gravity="center|left"
+                android:text="@string/patient_age"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/patient_gender_list_tv"
+                android:gravity="center|left"
+                android:text="@string/patient_gender"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/prescription_date_list_tv"
+        android:text="14/01/2020"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

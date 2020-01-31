@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#35586C	"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_view_keyword_heading"
+        android:textColor="#fff"
+        android:fontFamily="sans-serif-condensed-light"
+        android:background="#35586C	"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="@string/keyword_heading"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_data_writer"
+        android:textColor="#fff"
+        android:inputType="textMultiLine"
+        android:hint="text..."
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/mic_btn"
+            android:text="Tap To Talk"
+            android:gravity="center"
+            android:textSize="13dp"
+            android:background="#27408B"
+            android:textColor="#fff"
+            android:layout_alignTop="@id/ll_btn"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_btn"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/data_edit_manually"
+                android:background="#05B8CC"
+                android:textColor="#fff"
+                android:text="@string/edit_manually"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/back_btn"
+                android:textColor="#fff"
+                android:background="#05B8CC"
+                android:text="@string/done"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Voice Prescription</string>
+
+    <string name="add_new_patient">Add New Patient</string>
+    <string name="assist_existing_patient">Assist Existing Patient</string>
+    <string name="dr_name_default">Dr. Super Mario</string>
+    <string name="doctor_speciality_default">All rounder Specialist</string>
+    <string name="review_timeline">Review Timeline</string>
+    <string name="patient_name">Mr. Patient</string>
+    <string name="patient_age">age</string>
+    <string name="patient_gender">gender</string>
+    <string name="patient_email">patient@email.com</string>
+    <string name="doctor_name">Mr. Super Mario</string>
+    <string name="doctor_speciality">All Rounder Specialist</string>
+    <string name="doctor_email">supermario84@gmail.com</string>
+    <string name="doctor_phone">+91 9876543210</string>
+    <string name="data_heading">Heading</string>
+    <string name="keyword_heading">Keyword Heading</string>
+    <string name="tts_no_engines">No TTS engine found on this device</string>
+    <string name="done">Done</string>
+    <string name="edit_manually">Edit Manually</string>
+    <string name="sign_out_setting">Sign Out</string>
+    <string name="alert_dialog_title">Save as Pdf ?</string>
+    <string name="alert_dialog_message">Are you sure want to continue!</string>
+    <string name="incomplete_info_dialog_title">Missing some field!</string>
+    <string name="incomplete_info_dialog_message">All the given fields must be filled with patient\'s personal details.</string>
+    <string name="invalid_info_dialog_title">Invalid data in one or more fields!</string>
+    <string name="invalid_info_dialog_message">One or more provided patient\'s details are not valid.Enter valid inputs!</string>
+</resources>

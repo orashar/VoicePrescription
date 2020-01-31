@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/text_doctor_name"
+                android:textColor="#000"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_horizontal|left"
+                android:text="@string/doctor_name"
+                android:background="#05B8CC"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"/>
+            <TextView
+                android:id="@+id/text_doctor_speciality"
+                android:textColor="#000"
+                android:gravity="center_horizontal|left"
+                android:text="@string/doctor_speciality"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:background="#05B8CC"
+                android:layout_height="0dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#05B8CC"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_doctor_email"
+                android:textColor="#000"
+                android:gravity="center_horizontal|right"
+                android:text="@string/doctor_email"
+                android:layout_width="match_parent"
+                android:background="#05B8CC"
+                android:layout_weight="1"
+                android:layout_height="0dp"/>
+            <TextView
+                android:id="@+id/text_doctor_phone"
+                android:textColor="#000"
+                android:gravity="center_horizontal|right"
+                android:text="@string/doctor_phone"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+
+        android:background="#26466D	"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/patient_details_ll"
+        android:orientation="vertical"
+        android:background="#05B8CC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/text_patient_id"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Patient ID:"
+        android:textColor="#000"
+
+        android:background="#05B8CC"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#05B8CC"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text_patient_name"
+            android:textColor="#000"
+            android:gravity="center_horizontal"
+            android:text="@string/patient_name"
+            android:layout_width="0dp"
+            android:background="#05B8CC"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/text_patient_age"
+            android:textColor="#000"
+            android:background="#05B8CC"
+            android:gravity="center_horizontal"
+            android:text="@string/patient_age"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/text_patient_gender"
+            android:textColor="#000"
+            android:background="#05B8CC"
+            android:gravity="center_horizontal"
+            android:text="@string/patient_gender"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text_patient_email"
+            android:textColor="#000"
+            android:gravity="center_horizontal|left"
+            android:text="@string/patient_email"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#05B8CC"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#05B8CC"
+            android:text="date"
+            android:gravity="center_horizontal|right"
+            android:textColor="#000"
+
+            />
+    </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/mic_btn"
+        android:text="Tap To Talk"
+        android:gravity="center"
+        android:textSize="13dp"
+        android:background="#27408B"
+        android:textColor="#fff"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#05B8CC">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_prescription"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/list_item_keyword_prescription"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_corner_design"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="Keyword heading goes here"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+
+                <TextView
+                    android:id="@+id/list_item_data_prescription"
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/rounded_corner_design"
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_symptoms"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/list_item_keyword_symptoms"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_corner_design"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="Keyword heading goes here"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+
+                <TextView
+                    android:id="@+id/list_item_data_symptoms"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/rounded_corner_design"
+                    android:gravity="left"
+                    android:text=""
+                    android:textColor="#000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_advice"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/list_item_keyword_advice"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_corner_design"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="Keyword heading goes here"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+
+                <TextView
+                    android:id="@+id/list_item_data_advice"
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/rounded_corner_design"
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_diagnosis"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/list_item_keyword_diagnosis"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_corner_design"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="Keyword heading goes here"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+
+                <TextView
+                    android:id="@+id/list_item_data_diagnosis"
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/rounded_corner_design"
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/continue_btn"
+        android:layout_alignParentBottom="true"
+        android:background="#27408B"
+        android:textColor="#fff"
+        android:text="Continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

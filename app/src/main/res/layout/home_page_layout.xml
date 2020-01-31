@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.AppCompat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomePageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:background="#05B8CC">
+
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/assist_patient_text_box"
+            android:clickable="true"
+            android:gravity="center"
+            android:textColor="#000"
+            android:text="@string/assist_existing_patient"
+            android:textSize="32sp"
+            android:fontFamily="sans-serif-light"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/new_patient_text_box"
+            android:clickable="true"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="32sp"
+            android:text="@string/add_new_patient"
+            android:background="@drawable/bordertv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/timeline_text_box"
+            android:clickable="true"
+            android:gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#000"
+            android:textSize="32sp"
+            android:text="@string/review_timeline"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_doctor_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:src="@drawable/ic_profile_pic_default"
+            android:id="@+id/photo"/>
+        <TextView
+            android:id="@+id/name"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:text="@string/dr_name_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/id"
+            android:textSize="18sp"
+
+            android:textColor="#fff"
+            android:text="@string/doctor_speciality_default"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/mic_home_fb"
+        app:backgroundTint="#fff"
+        android:src="@drawable/ic_mic_on"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

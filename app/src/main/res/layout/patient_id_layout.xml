@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="#05B8CC"/>
+        <LinearLayout
+            android:orientation="vertical"
+
+            android:background="#C1F0F6	"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/patient_id_tv"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:text="Enter PId:"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+
+                    <EditText
+                        android:id="@+id/patient_id_et"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:hint="pid"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/search_btn"
+                    android:background="@drawable/rounded_corner_design"
+                    android:textSize="18sp"
+                    android:text="Search"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_view_for_partial_result"
+                android:textColor="#fff"
+                android:background="#27408B"
+                android:text="Tap to Talk"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+
+            <Button
+                android:id="@+id/patient_edit_manually"
+                android:background="#05B8CC"
+                android:textColor="#fff"
+                android:text="@string/edit_manually"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:src="@drawable/ic_person_black_24dp"
+            />
+        <TextView
+
+            android:textSize="24sp"
+
+            android:textColor="#fff"
+            android:text="Search Patient by PID"
+
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

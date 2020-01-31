@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Pdf file saved in folder : VoicePrescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/patient_name_share_item"
+            android:gravity="center|left"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Patient Name: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/patient_email_share_item"
+            android:layout_marginTop="10dp"
+            android:gravity="center|left"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Email: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Share copy to Patient via"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#05B8CC"
+        >
+
+    <ImageButton
+        android:id="@+id/via_gmail_btn"
+        android:src="@drawable/ic_gmail"
+        android:background="#05B8CC"
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:id="@+id/via_whatsapp_btn"
+        android:src="@drawable/ic_whatsapp"
+        android:background="#05B8CC"
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:clickable="true"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>

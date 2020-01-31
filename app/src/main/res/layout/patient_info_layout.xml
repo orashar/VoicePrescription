@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#05B8CC"/>
+        <LinearLayout
+            android:orientation="vertical"
+
+            android:background="#C1F0F6	"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner_design"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
+
+                <TextView
+
+                    android:text="Patient's Name:"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+                <EditText
+                    android:id="@+id/patient_name_info_tv"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:hint="@string/patient_name"
+                    android:background="@null"
+                    android:layout_marginLeft="1dp"
+                    android:maxLines="1"
+                    android:inputType="textPersonName|textCapWords"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner_design"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
+
+                <TextView
+                    android:text="Patient's Age:"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+                <EditText
+                    android:id="@+id/patient_age_info_tv"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:hint="@string/patient_age"
+                    android:background="@null"
+                    android:layout_marginLeft="1dp"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner_design"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
+
+                <TextView
+                    android:text="Patient's Gender:"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+                <EditText
+                    android:id="@+id/patient_gender_info_tv"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:hint="@string/patient_gender"
+                    android:background="@null"
+                    android:layout_marginLeft="1dp"
+                    android:maxLines="1"
+                    android:inputType="textCapWords"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner_design"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
+
+                <TextView
+                    android:text="Patient's Email:"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+                <EditText
+                    android:id="@+id/patient_email_info_tv"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:hint="email"
+                    android:maxLines="1"
+                    android:inputType="textEmailAddress"
+                    android:background="@null"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_view_for_partial_result"
+                android:textColor="#fff"
+                android:background="#27408B"
+                android:text="Tap to Talk"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+            <LinearLayout
+                android:background="@drawable/rounded_corner_design"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <Button
+                    android:id="@+id/patient_edit_manually"
+                    android:background="#05B8CC"
+                    android:textColor="#fff"
+                    android:text="@string/edit_manually"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+                <Button
+                    android:id="@+id/patient_done_btn"
+                    android:layout_marginLeft="1dp"
+                    android:textColor="#fff"
+                    android:background="#05B8CC"
+                    android:text="@string/done"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:src="@drawable/ic_person_black_24dp"
+            />
+        <TextView
+
+            android:textSize="24sp"
+
+            android:textColor="#fff"
+            android:text="Add Patient Details"
+
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
